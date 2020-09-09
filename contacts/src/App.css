@@ -1,3 +1,41 @@
-.App {
+.app {
+  padding: 0;
+  margin: 0;
   text-align: center;
+  align-content: center;
+}
+
+.app {
+  display: grid;
+  min-height: 100vh;
+  min-width: 100%;
+  grid-template-rows: 100px 1fr 90px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "sidebar" "content" "footer";
+}
+
+.header {
+  background-color: yellow;
+  grid-area: header;
+}
+.aside {
+  background-color: red;
+  grid-area: sidebar;
+}
+.main {
+  grid-area: content;
+}
+
+.footer {
+  background-color: gray;
+  grid-area: footer;
+}
+@media only screen and (min-width: 600px) {
+  .app {
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+  }
 }

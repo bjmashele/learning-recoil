@@ -1,11 +1,20 @@
 import React from "react";
-import logo from "./logo.svg";
+import styled from "@emotion/styled";
+import tw from "tailwind.macro";
+
 import "./App.css";
+
+const Button = styled.button`
+  ${tw`bg-blue-300 text-yellow-500 px-8 m-8 rounded h-20 text-3xl`}
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">Header</header>
+    <div className="app">
+      <div className="header">Header</div>
+      <div className="main">Main</div>
+      <div className="aside">Aside</div>
+      <div className="footer">Footer</div>
     </div>
   );
 }
