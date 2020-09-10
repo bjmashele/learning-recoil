@@ -13,7 +13,9 @@ function App() {
     <div className="app">
       <div className="header">Header</div>
       <div className="main">Main</div>
-      <div className="aside">Aside</div>
+      <div className="aside">
+        <div>Aside</div>
+      </div>
       <div className="footer">Footer</div>
     </div>
   );
